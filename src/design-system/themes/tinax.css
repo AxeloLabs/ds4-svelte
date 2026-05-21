@@ -1,0 +1,90 @@
+/* ▓▓▓ TINAX — 3 couleurs : Rose / Amber / Indigo ▓▓▓
+   A = Rose   (primary)   — dominante Tinder
+   B = Amber  (secondary) — accent chaud
+   C = Indigo (tertiary)  — accent froid de balance
+   Chaque couleur : normal / clair (container) / foncé (on-container)
+*/
+[data-theme='tinax'] {
+  /* ── A : Rose ── */
+  --ox-primary:               #E11D48;
+  --ox-on-primary:            #FFFFFF;
+  --ox-primary-container:     #FFA8B8;  /* was #FFE4E6 — plus saturé pour sortir du fond */
+  --ox-on-primary-container:  #4C0519;
+  --ox-primary-rgb:           225, 29, 72;
+
+  /* ── B : Amber ── */
+  --ox-secondary:             #F59E0B;
+  --ox-on-secondary:          #422006;
+  --ox-secondary-container:   #FEF3C7;
+  --ox-on-secondary-container:#78350F;
+
+  /* ── C : Indigo ── */
+  --ox-tertiary:              #6366F1;
+  --ox-on-tertiary:           #FFFFFF;
+  --ox-tertiary-container:    #E0E7FF;
+  --ox-on-tertiary-container: #1E1B4B;
+  --ox-tertiary-rgb:          99, 102, 241;
+
+  /* Surfaces : rose clairement visible */
+  --ox-surface:               #FFF5F7;  /* fond page — légèrement rosé */
+  --ox-surface-1:             #FFE0E7;  /* sidebar/appbar — rose visible */
+  --ox-surface-2:             #FFC8D5;  /* hover */
+  --ox-surface-3:             #FFAFC1;
+  --ox-surface-4:             #FF8FA6;
+  --ox-surface-5:             #FF6F8D;
+  --ox-surface-variant:       #FFE0E7;
+
+  --ox-on-surface:            #1A050A;
+  --ox-on-surface-variant:    #6B1829;
+
+  --ox-outline:               #4C0519;
+  --ox-outline-variant:       #FFC8D5;
+
+  --ox-error:                 #DC2626;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #FEE2E2;
+  --ox-on-error-container:    #7F1D1D;
+  --ox-error-rgb:             220, 38, 38;
+}
+
+/* ▓▓▓ TINAX — Dark scheme (inversion mécanique) ▓▓▓ */
+[data-theme='tinax'].dark,
+.dark [data-theme='tinax'] {
+  --ox-primary:               #FB7185;
+  --ox-on-primary:            #4C0519;
+  --ox-primary-container:     #881337;
+  --ox-on-primary-container:  #FFE4E6;
+  --ox-primary-rgb:           251, 113, 133;
+
+  --ox-secondary:             #FCD34D;
+  --ox-on-secondary:          #422006;
+  --ox-secondary-container:   #78350F;
+  --ox-on-secondary-container:#FEF3C7;
+
+  --ox-tertiary:              #A5B4FC;
+  --ox-on-tertiary:           #1E1B4B;
+  --ox-tertiary-container:    #312E81;
+  --ox-on-tertiary-container: #E0E7FF;
+  --ox-tertiary-rgb:          165, 180, 252;
+
+  --ox-surface:               #1A050A;
+  --ox-surface-1:             #1A050A;
+  --ox-surface-2:             #2D0810;
+  --ox-surface-3:             #3F0B17;
+  --ox-surface-4:             #570F1F;
+  --ox-surface-5:             #6F1428;
+  --ox-surface-variant:       #2D0810;
+  --ox-on-surface:            #FFE0E7;
+  --ox-on-surface-variant:    #FFA8B8;
+
+  --ox-outline:               #FFE0E7;
+  --ox-outline-variant:       #2D0810;
+
+  --ox-error:                 #F87171;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #450A0A;
+  --ox-on-error-container:    #FECACA;
+  --ox-error-rgb:             248, 113, 113;
+}

@@ -1,0 +1,85 @@
+/* ▓▓▓ LC — 3 couleurs : Blue / Cyan / Slate ▓▓▓ */
+[data-theme='lc'] {
+  /* ── A : Blue (LinkedIn) ── */
+  --ox-primary:               #0A66C2;
+  --ox-on-primary:            #FFFFFF;
+  --ox-primary-container:     #90C7F8;  /* was #DBEAFE — plus saturé */
+  --ox-on-primary-container:  #0C2A4D;
+  --ox-primary-rgb:           10, 102, 194;
+
+  /* ── B : Cyan ── */
+  --ox-secondary:             #06B6D4;
+  --ox-on-secondary:          #FFFFFF;
+  --ox-secondary-container:   #A5F3FC;
+  --ox-on-secondary-container:#0E3A4A;
+
+  /* ── C : Slate ── */
+  --ox-tertiary:              #475569;
+  --ox-on-tertiary:           #FFFFFF;
+  --ox-tertiary-container:    #E2E8F0;
+  --ox-on-tertiary-container: #0F172A;
+  --ox-tertiary-rgb:          71, 85, 105;
+
+  /* Surfaces : bleu clairement visible */
+  --ox-surface:               #EFF6FF;  /* fond page — légèrement bleu */
+  --ox-surface-1:             #C2DFFE;  /* sidebar/appbar — bleu visible */
+  --ox-surface-2:             #93C5FD;  /* hover */
+  --ox-surface-3:             #60A5FA;
+  --ox-surface-4:             #3B82F6;
+  --ox-surface-5:             #2563EB;
+  --ox-surface-variant:       #C2DFFE;
+
+  --ox-on-surface:            #0C2A4D;
+  --ox-on-surface-variant:    #1E4080;
+
+  --ox-outline:               #0C2A4D;
+  --ox-outline-variant:       #93C5FD;
+
+  --ox-error:                 #DC2626;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #FEE2E2;
+  --ox-on-error-container:    #7F1D1D;
+  --ox-error-rgb:             220, 38, 38;
+}
+
+/* ▓▓▓ LC — Dark scheme (inversion mécanique) ▓▓▓ */
+[data-theme='lc'].dark,
+.dark [data-theme='lc'] {
+  --ox-primary:               #60A5FA;
+  --ox-on-primary:            #0C2A4D;
+  --ox-primary-container:     #1E3A8A;
+  --ox-on-primary-container:  #DBEAFE;
+  --ox-primary-rgb:           96, 165, 250;
+
+  --ox-secondary:             #67E8F9;
+  --ox-on-secondary:          #0E3A4A;
+  --ox-secondary-container:   #155E75;
+  --ox-on-secondary-container:#A5F3FC;
+
+  --ox-tertiary:              #94A3B8;
+  --ox-on-tertiary:           #0F172A;
+  --ox-tertiary-container:    #334155;
+  --ox-on-tertiary-container: #E2E8F0;
+  --ox-tertiary-rgb:          148, 163, 184;
+
+  --ox-surface:               #0C1220;
+  --ox-surface-1:             #0C1220;
+  --ox-surface-2:             #11192D;
+  --ox-surface-3:             #16223D;
+  --ox-surface-4:             #1B2C4D;
+  --ox-surface-5:             #20355D;
+  --ox-surface-variant:       #11192D;
+  --ox-on-surface:            #DBEAFE;
+  --ox-on-surface-variant:    #93C5FD;
+
+  --ox-outline:               #DBEAFE;
+  --ox-outline-variant:       #1E3A8A;
+
+  --ox-error:                 #F87171;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #450A0A;
+  --ox-on-error-container:    #FECACA;
+  --ox-error-rgb:             248, 113, 113;
+}

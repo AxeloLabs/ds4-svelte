@@ -1,0 +1,97 @@
+{
+  "name": "ds4-svelte",
+  "version": "0.1.0",
+  "description": "DS-4 — OX Design System for Svelte 5: tokens, presets, UI components. Material Design 3 styled, Zag.js powered.",
+  "license": "MIT",
+  "author": "Axel Régnou <regnou.a@gmail.com>",
+  "type": "module",
+  "sideEffects": false,
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "design-system",
+    "ui-kit",
+    "components",
+    "material-design",
+    "material-design-3",
+    "md3",
+    "zag-js",
+    "tokens",
+    "themes",
+    "ds4"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens": "./src/design-system/tokens/index.ts",
+    "./presets": "./src/design-system/presets/index.ts",
+    "./components": "./src/components/index.ts",
+    "./ui": "./src/components/index.ts",
+    "./themes": "./src/design-system/themes/manifest.ts",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests",
+    "cicd": "pnpm lint && pnpm test",
+    "release": "pnpm publish --access public --no-git-checks",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0",
+    "@lucide/svelte": "^1.16.0",
+    "@zag-js/accordion": "^1.40.0",
+    "@zag-js/avatar": "^1.40.0",
+    "@zag-js/combobox": "^1.40.0",
+    "@zag-js/core": "^1.40.0",
+    "@zag-js/editable": "^1.40.0",
+    "@zag-js/file-upload": "^1.40.0",
+    "@zag-js/floating-panel": "^1.40.0",
+    "@zag-js/hover-card": "^1.40.0",
+    "@zag-js/image-cropper": "^1.40.0",
+    "@zag-js/menu": "^1.40.0",
+    "@zag-js/navigation-menu": "^1.40.0",
+    "@zag-js/number-input": "^1.40.0",
+    "@zag-js/pagination": "^1.40.0",
+    "@zag-js/password-input": "^1.40.0",
+    "@zag-js/pin-input": "^1.40.0",
+    "@zag-js/popover": "^1.40.0",
+    "@zag-js/progress": "^1.40.0",
+    "@zag-js/radio-group": "^1.40.0",
+    "@zag-js/rating-group": "^1.40.0",
+    "@zag-js/signature-pad": "^1.40.0",
+    "@zag-js/slider": "^1.40.0",
+    "@zag-js/splitter": "^1.40.0",
+    "@zag-js/steps": "^1.40.0",
+    "@zag-js/svelte": "^1.40.0",
+    "@zag-js/switch": "^1.40.0",
+    "@zag-js/tabs": "^1.40.0",
+    "@zag-js/tags-input": "^1.40.0",
+    "@zag-js/timer": "^1.40.0",
+    "@zag-js/toast": "^1.40.0",
+    "@zag-js/toggle-group": "^1.40.0",
+    "@zag-js/tooltip": "^1.40.0",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-svelte": "^8.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxeloLabs/ds4-svelte.git"
+  },
+  "homepage": "https://github.com/AxeloLabs/ds4-svelte#readme",
+  "bugs": {
+    "url": "https://github.com/AxeloLabs/ds4-svelte/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

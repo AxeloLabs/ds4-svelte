@@ -1,0 +1,6 @@
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   SHIM rétrocompat — themes/ déplacé vers design-system/themes/
+   Permet aux call-sites legacy `@import ".../ui-kit/src/themes/index.css"`
+   de continuer à fonctionner sans modification.
+   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+@import '../design-system/themes/index.css';

@@ -1,0 +1,96 @@
+/* ▓▓▓ B&W — 3 couleurs : Black / Gray / Cool gray ▓▓▓
+   Theme par defaut neutre (axelo + crm2).
+   Schéma dark défini plus bas via [data-theme='bw'].dark.
+*/
+[data-theme='bw'],
+[data-theme='default'] {
+  /* ── A : Black ── */
+  --ox-primary:               #1A1A1A;
+  --ox-on-primary:            #FFFFFF;
+  --ox-primary-container:     #E5E5E5;
+  --ox-on-primary-container:  #0A0A0A;
+  --ox-primary-rgb:           26, 26, 26;
+
+  /* ── B : Gray ── */
+  --ox-secondary:             #6B7280;
+  --ox-on-secondary:          #FFFFFF;
+  --ox-secondary-container:   #F3F4F6;
+  --ox-on-secondary-container:#1F2937;
+
+  /* ── C : Cool gray ── */
+  --ox-tertiary:              #94A3B8;
+  --ox-on-tertiary:           #FFFFFF;
+  --ox-tertiary-container:    #E2E8F0;
+  --ox-on-tertiary-container: #0F172A;
+  --ox-tertiary-rgb:          148, 163, 184;
+
+  --ox-surface:               #FFFFFF;
+  --ox-on-surface:            #0A0A0A;
+  --ox-on-surface-variant:    #374151;
+
+  --ox-surface-1:             #FFFFFF;
+  --ox-surface-2:             #FAFAFA;
+  --ox-surface-3:             #F5F5F5;
+  --ox-surface-4:             #EEEEEE;
+  --ox-surface-5:             #E5E5E5;
+  --ox-surface-variant:       #F5F5F5;
+  --ox-outline:               #0A0A0A;
+  --ox-outline-variant:       #E5E5E5;
+
+  --ox-error:                 #DC2626;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #FEE2E2;
+  --ox-on-error-container:    #7F1D1D;
+  --ox-error-rgb:             220, 38, 38;
+}
+
+/* ▓▓▓ B&W — Dark scheme ▓▓▓
+   Activé par .dark sur ancêtre (typiquement <html>) — combinaison avec
+   data-theme='bw' pour scoper. Inversion mécanique des surfaces +
+   ajustement des couleurs primary/container pour rester contrastées WCAG AA.
+*/
+[data-theme='bw'].dark,
+[data-theme='default'].dark,
+.dark [data-theme='bw'],
+.dark [data-theme='default'] {
+  /* ── A : Black inversé en blanc ── */
+  --ox-primary:               #F5F5F5;
+  --ox-on-primary:            #0A0A0A;
+  --ox-primary-container:     #2A2A2A;
+  --ox-on-primary-container:  #FAFAFA;
+  --ox-primary-rgb:           245, 245, 245;
+
+  /* ── B : Gray (boost luminance pour dark) ── */
+  --ox-secondary:             #9CA3AF;
+  --ox-on-secondary:          #0A0A0A;
+  --ox-secondary-container:   #374151;
+  --ox-on-secondary-container:#F3F4F6;
+
+  /* ── C : Cool gray (boost luminance) ── */
+  --ox-tertiary:              #CBD5E1;
+  --ox-on-tertiary:           #0F172A;
+  --ox-tertiary-container:    #1E293B;
+  --ox-on-tertiary-container: #E2E8F0;
+  --ox-tertiary-rgb:          203, 213, 225;
+
+  --ox-surface:               #0A0A0A;
+  --ox-on-surface:            #F5F5F5;
+  --ox-on-surface-variant:    #C7CDD3;
+
+  --ox-surface-1:             #0A0A0A;
+  --ox-surface-2:             #1A1A1A;
+  --ox-surface-3:             #2A2A2A;
+  --ox-surface-4:             #3A3A3A;
+  --ox-surface-5:             #4A4A4A;
+  --ox-surface-variant:       #2A2A2A;
+  --ox-outline:               #F5F5F5;
+  --ox-outline-variant:       #2A2A2A;
+
+  --ox-error:                 #F87171;
+
+  --ox-on-error:              #FFFFFF;
+  --ox-error-container:       #450A0A;
+  --ox-on-error-container:    #FECACA;
+  --ox-error-rgb:             248, 113, 113;
+}

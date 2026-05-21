@@ -1,0 +1,107 @@
+/* ▓▓▓ TT — Toucher Terre — palette designer (warm cream + earth tones) ▓▓▓
+   Restored from blog :root override (designer-curated, do NOT regenerate)
+   Primary = Rouille  ·  Secondary = Brun fonce  ·  Tertiary = Or
+   Surface = warm cream tones  ·  Outline = sand */
+[data-theme='tt'] {
+  /* ── A : Primary = Rouille ── */
+  --ox-primary:                 #b14920;
+  --ox-on-primary:              #ffffff;
+  --ox-primary-container:       #fde8d0;
+  --ox-on-primary-container:    #3e1600;
+  --ox-primary-rgb:             177, 73, 32;
+
+  /* ── B : Secondary = Brun fonce ── */
+  --ox-secondary:               #5b2813;
+  --ox-on-secondary:            #ffffff;
+  --ox-secondary-container:     #f9e9cf;
+  --ox-on-secondary-container:  #3e1600;
+  --ox-secondary-rgb:           91, 40, 19;
+
+  /* ── C : Tertiary = Or ── */
+  --ox-tertiary:                #c49520;
+  --ox-on-tertiary:             #ffffff;
+  --ox-tertiary-container:      #fff0c7;
+  --ox-on-tertiary-container:   #3d2e00;
+  --ox-tertiary-rgb:            196, 149, 32;
+
+  /* ── Surface (warm cream tones) ── */
+  --ox-surface:                 #fdf6ed;
+  --ox-surface-1:               #f9e9cf;
+  --ox-surface-2:               #f3dfbc;
+  --ox-surface-3:               #edd5aa;
+  --ox-surface-4:               #e8d5b7;
+  --ox-surface-5:               #e0c9a4;
+  --ox-on-surface:              #1a1a1a;
+  --ox-on-surface-variant:      #5b4a3a;
+  --ox-surface-variant:         #f3e4d0;
+
+  /* ── Outline (sand) ── */
+  --ox-outline:                 #8a7560;
+  --ox-outline-variant:         #d4c4a8;
+
+  /* ── Inverse ── */
+  --ox-inverse-surface:         #352a1e;
+  --ox-inverse-on-surface:      #f9e9cf;
+  --ox-inverse-primary:         #ffb68a;
+
+  /* ── Error ── */
+  --ox-error:                   #dc2626;
+  --ox-on-error:                #ffffff;
+  --ox-error-container:         #fef2f2;
+  --ox-on-error-container:      #7f1d1d;
+  --ox-error-rgb:               220, 38, 38;
+
+  /* ── Success ── */
+  --ox-success:                 #146C2E;
+  --ox-on-success:              #ffffff;
+  --ox-success-container:       #e6f4ea;
+}
+
+/* ▓▓▓ TT — Dark scheme (inversion mécanique, palette warm earth) ▓▓▓ */
+[data-theme='tt'].dark,
+.dark [data-theme='tt'] {
+  --ox-primary:                 #FF8A56;
+  --ox-on-primary:              #3E1600;
+  --ox-primary-container:       #7A2E0D;
+  --ox-on-primary-container:    #FDE8D0;
+  --ox-primary-rgb:             255, 138, 86;
+
+  --ox-secondary:               #C49572;
+  --ox-on-secondary:            #3E1600;
+  --ox-secondary-container:     #5B2813;
+  --ox-on-secondary-container:  #F9E9CF;
+  --ox-secondary-rgb:           196, 149, 114;
+
+  --ox-tertiary:                #FDC451;
+  --ox-on-tertiary:             #3D2E00;
+  --ox-tertiary-container:      #8E6A0B;
+  --ox-on-tertiary-container:   #FFF0C7;
+  --ox-tertiary-rgb:            253, 196, 81;
+
+  --ox-surface:                 #1A140C;
+  --ox-surface-1:               #1A140C;
+  --ox-surface-2:               #261D12;
+  --ox-surface-3:               #322618;
+  --ox-surface-4:               #3F2F1E;
+  --ox-surface-5:               #4B3924;
+  --ox-surface-variant:         #261D12;
+  --ox-on-surface:              #F9E9CF;
+  --ox-on-surface-variant:      #D4C4A8;
+
+  --ox-outline:                 #C4B097;
+  --ox-outline-variant:         #4B3924;
+
+  --ox-inverse-surface:         #F9E9CF;
+  --ox-inverse-on-surface:      #352A1E;
+  --ox-inverse-primary:         #B14920;
+
+  --ox-error:                   #F87171;
+  --ox-on-error:                #ffffff;
+  --ox-error-container:         #450A0A;
+  --ox-on-error-container:      #FECACA;
+  --ox-error-rgb:               248, 113, 113;
+
+  --ox-success:                 #4ADE80;
+  --ox-on-success:              #022C22;
+  --ox-success-container:       #14532D;
+}

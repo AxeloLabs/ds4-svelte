@@ -1,0 +1,216 @@
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   OX PRESETS — Skeleton-inspired utility classes
+   4 presets x 5 colors = 20 classes
+   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+
+/* ── GLASS — transparency + backdrop blur ── */
+
+.ox-preset-glass-primary {
+  background: rgba(var(--ox-primary-rgb), 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--ox-primary-rgb), 0.25);
+  border-radius: var(--ox-shape-md);
+  box-shadow: 0 4px 24px rgba(var(--ox-primary-rgb), 0.08);
+}
+.ox-preset-glass-secondary {
+  background: rgba(var(--ox-secondary-rgb), 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--ox-secondary-rgb), 0.25);
+  border-radius: var(--ox-shape-md);
+  box-shadow: 0 4px 24px rgba(var(--ox-secondary-rgb), 0.08);
+}
+.ox-preset-glass-tertiary {
+  background: rgba(var(--ox-tertiary-rgb), 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--ox-tertiary-rgb), 0.25);
+  border-radius: var(--ox-shape-md);
+  box-shadow: 0 4px 24px rgba(var(--ox-tertiary-rgb), 0.08);
+}
+.ox-preset-glass-error {
+  background: rgba(var(--ox-error-rgb), 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--ox-error-rgb), 0.25);
+  border-radius: var(--ox-shape-md);
+  box-shadow: 0 4px 24px rgba(var(--ox-error-rgb), 0.08);
+}
+.ox-preset-glass-success {
+  background: rgba(var(--ox-success-rgb), 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--ox-success-rgb), 0.25);
+  border-radius: var(--ox-shape-md);
+  box-shadow: 0 4px 24px rgba(var(--ox-success-rgb), 0.08);
+}
+
+/* ── ELEVATED — filled + shadow ── */
+
+.ox-preset-elevated-primary {
+  background: var(--ox-primary);
+  color: var(--ox-on-primary);
+  box-shadow: var(--ox-elevation-2);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-elevated-secondary {
+  background: var(--ox-secondary);
+  color: var(--ox-on-secondary);
+  box-shadow: var(--ox-elevation-2);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-elevated-tertiary {
+  background: var(--ox-tertiary);
+  color: var(--ox-on-tertiary);
+  box-shadow: var(--ox-elevation-2);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-elevated-error {
+  background: var(--ox-error);
+  color: var(--ox-on-error);
+  box-shadow: var(--ox-elevation-2);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-elevated-success {
+  background: var(--ox-success);
+  color: var(--ox-on-success);
+  box-shadow: var(--ox-elevation-2);
+  border-radius: var(--ox-shape-md);
+}
+
+/* ── GHOST — transparent, tonal on hover ── */
+
+.ox-preset-ghost-primary {
+  background: transparent;
+  color: var(--ox-primary);
+  border: none;
+  border-radius: var(--ox-shape-md);
+  transition: background var(--ox-duration-medium1) var(--ox-easing-standard);
+}
+.ox-preset-ghost-primary:hover { background: rgba(var(--ox-primary-rgb), 0.08); }
+
+.ox-preset-ghost-secondary {
+  background: transparent;
+  color: var(--ox-secondary);
+  border: none;
+  border-radius: var(--ox-shape-md);
+  transition: background var(--ox-duration-medium1) var(--ox-easing-standard);
+}
+.ox-preset-ghost-secondary:hover { background: rgba(var(--ox-secondary-rgb), 0.08); }
+
+.ox-preset-ghost-tertiary {
+  background: transparent;
+  color: var(--ox-tertiary);
+  border: none;
+  border-radius: var(--ox-shape-md);
+  transition: background var(--ox-duration-medium1) var(--ox-easing-standard);
+}
+.ox-preset-ghost-tertiary:hover { background: rgba(var(--ox-tertiary-rgb), 0.08); }
+
+.ox-preset-ghost-error {
+  background: transparent;
+  color: var(--ox-error);
+  border: none;
+  border-radius: var(--ox-shape-md);
+  transition: background var(--ox-duration-medium1) var(--ox-easing-standard);
+}
+.ox-preset-ghost-error:hover { background: rgba(var(--ox-error-rgb), 0.08); }
+
+.ox-preset-ghost-success {
+  background: transparent;
+  color: var(--ox-success);
+  border: none;
+  border-radius: var(--ox-shape-md);
+  transition: background var(--ox-duration-medium1) var(--ox-easing-standard);
+}
+.ox-preset-ghost-success:hover { background: rgba(var(--ox-success-rgb), 0.08); }
+
+/* ── OUTLINED — border + transparent bg ── */
+
+.ox-preset-outlined-primary {
+  background: transparent;
+  border: 1.5px solid var(--ox-primary);
+  color: var(--ox-primary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-outlined-secondary {
+  background: transparent;
+  border: 1.5px solid var(--ox-secondary);
+  color: var(--ox-secondary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-outlined-tertiary {
+  background: transparent;
+  border: 1.5px solid var(--ox-tertiary);
+  color: var(--ox-tertiary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-outlined-error {
+  background: transparent;
+  border: 1.5px solid var(--ox-error);
+  color: var(--ox-error);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-outlined-success {
+  background: transparent;
+  border: 1.5px solid var(--ox-success);
+  color: var(--ox-success);
+  border-radius: var(--ox-shape-md);
+}
+
+/* ── TONAL — container bg + on-container text ── */
+
+.ox-preset-tonal-primary {
+  background: var(--ox-primary-container);
+  color: var(--ox-on-primary-container);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-tonal-secondary {
+  background: var(--ox-secondary-container);
+  color: var(--ox-on-secondary-container);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-tonal-tertiary {
+  background: var(--ox-tertiary-container);
+  color: var(--ox-on-tertiary-container);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-tonal-error {
+  background: var(--ox-error-container);
+  color: var(--ox-on-error-container);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-tonal-success {
+  background: var(--ox-success-container);
+  color: var(--ox-on-success);
+  border-radius: var(--ox-shape-md);
+}
+
+/* ── GRADIENT — linear gradient between two colors ── */
+
+.ox-preset-gradient-primary {
+  background: linear-gradient(135deg, var(--ox-primary), var(--ox-tertiary));
+  color: var(--ox-on-primary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-gradient-secondary {
+  background: linear-gradient(135deg, var(--ox-secondary), var(--ox-primary));
+  color: var(--ox-on-secondary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-gradient-tertiary {
+  background: linear-gradient(135deg, var(--ox-tertiary), var(--ox-secondary));
+  color: var(--ox-on-tertiary);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-gradient-error {
+  background: linear-gradient(135deg, var(--ox-error), var(--ox-tertiary));
+  color: var(--ox-on-error);
+  border-radius: var(--ox-shape-md);
+}
+.ox-preset-gradient-success {
+  background: linear-gradient(135deg, var(--ox-success), var(--ox-primary));
+  color: var(--ox-on-success);
+  border-radius: var(--ox-shape-md);
+}
