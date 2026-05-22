@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1
+
+### Patch Changes
+
+- 518f27c: Switch release pipeline to npm Trusted Publishing (OIDC) — no more
+  long-lived NPM_TOKEN, publish provenance badge enabled.
+
 All notable changes to `ds4-svelte` will be documented in this file.
 
 Format inspired by [Keep a Changelog](https://keepachangelog.com).
